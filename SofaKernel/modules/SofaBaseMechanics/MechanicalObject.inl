@@ -1523,6 +1523,9 @@ Data<typename MechanicalObject<DataTypes>::VecCoord>* MechanicalObject<DataTypes
     if (vectorsCoord[v.index] == NULL)
     {
         vectorsCoord[v.index] = new Data< VecCoord >;
+        vectorsCoord[v.index]->setName(v.getName());
+        vectorsCoord[v.index]->setGroup("Vector");
+        this->addData(vectorsCoord[v.index]);
         if (f_reserve.getValue() > 0)
         {
             vectorsCoord[v.index]->beginWriteOnly()->reserve(f_reserve.getValue());
@@ -1589,6 +1592,9 @@ Data<typename MechanicalObject<DataTypes>::VecDeriv>* MechanicalObject<DataTypes
     if (vectorsDeriv[v.index] == NULL)
     {
         vectorsDeriv[v.index] = new Data< VecDeriv >;
+        vectorsDeriv[v.index]->setName(v.getName());
+        vectorsDeriv[v.index]->setGroup("Vector");
+        this->addData(vectorsDeriv[v.index]);
         if (f_reserve.getValue() > 0)
         {
             vectorsDeriv[v.index]->beginWriteOnly()->reserve(f_reserve.getValue());
@@ -1649,6 +1655,9 @@ Data<typename MechanicalObject<DataTypes>::MatrixDeriv>* MechanicalObject<DataTy
     if (vectorsMatrixDeriv[v.index] == NULL)
     {
         vectorsMatrixDeriv[v.index] = new Data< MatrixDeriv >;
+        vectorsMatrixDeriv[v.index]->setName(v.getName());
+        vectorsMatrixDeriv[v.index]->setGroup("Vector");
+        this->addData(vectorsMatrixDeriv[v.index]);
     }
 
     return vectorsMatrixDeriv[v.index];
