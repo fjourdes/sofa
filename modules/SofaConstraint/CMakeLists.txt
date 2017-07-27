@@ -71,30 +71,30 @@ set(SOURCE_FILES
 )
 
 
-    list(APPEND HEADER_FILES
-        BarycentricDistanceLMConstraintContact.h
-        BarycentricDistanceLMConstraintContact.inl
-        DOFBlockerLMConstraint.h
-        DOFBlockerLMConstraint.inl
-        FixedLMConstraint.h
-        FixedLMConstraint.inl
-        DistanceLMContactConstraint.h
-        DistanceLMContactConstraint.inl
-        DistanceLMConstraint.h
-        DistanceLMConstraint.inl
-        LMConstraintSolver.h
-        LMConstraintDirectSolver.h
-    )
+list(APPEND HEADER_FILES
+    BarycentricDistanceLMConstraintContact.h
+    BarycentricDistanceLMConstraintContact.inl
+    DOFBlockerLMConstraint.h
+    DOFBlockerLMConstraint.inl
+    FixedLMConstraint.h
+    FixedLMConstraint.inl
+    DistanceLMContactConstraint.h
+    DistanceLMContactConstraint.inl
+    DistanceLMConstraint.h
+    DistanceLMConstraint.inl
+    LMConstraintSolver.h
+    LMConstraintDirectSolver.h
+)
 
-    list(APPEND SOURCE_FILES
-        BarycentricDistanceLMConstraintContact.cpp
-        DOFBlockerLMConstraint.cpp
-        FixedLMConstraint.cpp
-        DistanceLMContactConstraint.cpp
-        DistanceLMConstraint.cpp
-        LMConstraintSolver.cpp
-        LMConstraintDirectSolver.cpp
-    )
+list(APPEND SOURCE_FILES
+    BarycentricDistanceLMConstraintContact.cpp
+    DOFBlockerLMConstraint.cpp
+    FixedLMConstraint.cpp
+    DistanceLMContactConstraint.cpp
+    DistanceLMConstraint.cpp
+    LMConstraintSolver.cpp
+    LMConstraintDirectSolver.cpp
+)
 
 
 add_library(${PROJECT_NAME} SHARED ${HEADER_FILES} ${SOURCE_FILES})
