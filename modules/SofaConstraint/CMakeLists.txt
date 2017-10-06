@@ -35,6 +35,8 @@ set(HEADER_FILES
     UncoupledConstraintCorrection.inl
     UnilateralInteractionConstraint.h
     UnilateralInteractionConstraint.inl
+    UniformConstraint.h
+    UniformConstraint.inl
     config.h
     initConstraint.h
 )
@@ -59,6 +61,7 @@ set(SOURCE_FILES
     StopperConstraint.cpp
     UncoupledConstraintCorrection.cpp
     UnilateralInteractionConstraint.cpp
+    UniformConstraint.cpp
     initConstraint.cpp
 )
 
