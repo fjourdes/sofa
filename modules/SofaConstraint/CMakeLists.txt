@@ -23,6 +23,8 @@ set(HEADER_FILES
     LinearSolverConstraintCorrection.inl
     LocalMinDistance.h
     LocalMinDistance.inl
+    MappingGeometricStiffnessForceField.h
+    MappingGeometricStiffnessForceField.inl
     PrecomputedConstraintCorrection.h
     PrecomputedConstraintCorrection.inl
     SlidingConstraint.h
@@ -55,6 +57,7 @@ set(SOURCE_FILES
     LMDNewProximityIntersection.cpp
     LinearSolverConstraintCorrection.cpp
     LocalMinDistance.cpp
+    MappingGeometricStiffnessForceField.cpp
     PrecomputedConstraintCorrection.cpp
     SlidingConstraint.cpp
     StickContactConstraint.cpp
